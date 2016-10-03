@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <businessDocument xmlns="http://www.axway.com/mappingServices/x12BusinessDocument" id="e3563b52-6dc1-455d-a17a-e9d9a8712bda" enableNullableChecks="true" bdocLibraryColl="Standards_Library_CoreEDI V 1.2.0" bdocOriginalName="004030/850" encodingBD="iso8859">
-   <signature appVersion="3.1.2" lastUpdatedOn="03/10/2016 14:09:51 +0300"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="03/10/2016 14:10:56 +0300"/>
    <tableName>~/Extended Objects/T_004030.tbl</tableName>
    <childElements>
       <childElement factoryType="EdiHeader" order="1" name="HEADER" hash="-419967019">
@@ -110,7 +110,7 @@
             <childElement factoryType="EdiSegment" order="33" label="Beginning Segment for Purchase Order" name="BEG" hash="-98301839">
                <cardinality minimum="1" maximum="1"/>
                <childElements>
-                  <childElement factoryType="EdiSimpleElement" hash="1494387227" typeId="14" definition="2,22" paddingCharElement=" " allowDistortion="true" label="Transaction Set Purpose Code" keepDecimalSeparator="true" order="34" paddingPosElement="3" encodingElement="iso8859" name="e01_0353">
+                  <childElement factoryType="EdiSimpleElement" hash="1494387227" typeId="14" definition="2,2" paddingCharElement=" " allowDistortion="true" label="Transaction Set Purpose Code" keepDecimalSeparator="true" order="34" paddingPosElement="3" encodingElement="iso8859" name="e01_0353">
                      <cardinality minimum="1" maximum="1"/>
                   </childElement>
                   <childElement factoryType="EdiSimpleElement" hash="823306570" typeId="14" definition="2,2" paddingCharElement=" " allowDistortion="true" label="Purchase Order Type Code" keepDecimalSeparator="true" order="35" paddingPosElement="3" encodingElement="iso8859" name="e02_0092">
