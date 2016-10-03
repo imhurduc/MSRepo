@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <businessDocument xmlns="http://www.axway.com/mappingServices/x12BusinessDocument" id="eb6eaf91-8335-4808-a286-1104c44cf5ab" enableNullableChecks="true" bdocLibraryColl="Standards_Library_CoreEDI V 1.2.0" bdocOriginalName="004030/850" encodingBD="iso8859">
-   <signature appVersion="3.0.1" lastUpdatedOn="06/08/2016 19:38:49 -0700"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="03/10/2016 13:43:13 +0300"/>
    <childElements>
       <childElement factoryType="EdiHeader" order="1" name="HEADER" hash="-798815038">
          <cardinality maximum="1"/>
@@ -109,7 +109,7 @@
             <childElement factoryType="EdiSegment" order="33" label="Beginning Segment for Purchase Order" name="BEG" hash="36640560">
                <cardinality minimum="1" maximum="1"/>
                <childElements>
-                  <childElement factoryType="EdiSimpleElement" hash="-1045014944" typeId="14" definition="2,2" paddingCharElement=" " allowDistortion="true" label="Transaction Set Purpose Code" keepDecimalSeparator="true" order="34" paddingPosElement="3" encodingElement="iso8859" name="e01_0353">
+                  <childElement factoryType="EdiSimpleElement" hash="-1045014944" typeId="14" definition="2,3" paddingCharElement=" " allowDistortion="true" label="Transaction Set Purpose Code" keepDecimalSeparator="true" order="34" paddingPosElement="3" encodingElement="iso8859" name="e01_0353">
                      <cardinality minimum="1" maximum="1"/>
                   </childElement>
                   <childElement factoryType="EdiSimpleElement" hash="-438859736" typeId="14" definition="2,2" paddingCharElement=" " allowDistortion="true" label="Purchase Order Type Code" keepDecimalSeparator="true" order="35" paddingPosElement="3" encodingElement="iso8859" name="e02_0092">
@@ -519,7 +519,7 @@
                   <childElement factoryType="EdiSimpleElement" hash="-253435722" typeId="30" definition="8" allowDistortion="true" label="Date" nullable="true" keepDecimalSeparator="true" order="163" pattern="YYYYMMDD" encodingElement="iso8859" name="e07_0373">
                      <cardinality maximum="1"/>
                   </childElement>
-                  <childElement factoryType="EdiSimpleElement" hash="865912759" typeId="34" definition="4,8" allowDistortion="true" label="Time" nullable="true" keepDecimalSeparator="true" order="164" pattern="hhmmssqq" encodingElement="iso8859" name="e08_0337">
+                  <childElement factoryType="EdiSimpleElement" hash="865912759" typeId="34" definition="4,7" allowDistortion="true" label="Time" nullable="true" keepDecimalSeparator="true" order="164" pattern="hhmmssqq" encodingElement="iso8859" name="e08_0337">
                      <cardinality maximum="1"/>
                   </childElement>
                   <childElement factoryType="EdiSimpleElement" hash="-1084868420" typeId="14" definition="3,3" paddingCharElement=" " allowDistortion="true" label="Date/Time Qualifier" nullable="true" keepDecimalSeparator="true" order="165" paddingPosElement="3" encodingElement="iso8859" name="e09_0374">
