@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <businessDocument xmlns="http://www.axway.com/mappingServices/xmlBusinessDocument" id="88e789ee-5dd8-46ea-86f8-c716ffdf3d87" encodingBD="iso8859">
+<<<<<<< HEAD
+   <signature appVersion="3.1.2" lastUpdatedOn="25/08/2017 15:04:13 +0300"/>
+=======
    <signature appVersion="3.1.2" lastUpdatedOn="25/08/2017 15:06:27 +0300"/>
+>>>>>>> branch 'master' of https://github.com/imhurduc/MSRepo
    <childElements>
       <childElement factoryType="XmlProlog" order="1" name="Prolog" label="Prolog xml" hash="982847463">
          <cardinality minimum="1" maximum="1"/>
@@ -48,6 +52,14 @@
             </childElement>
             <childElement factoryType="XmlLeafAny" hash="-2027466439" typeId="11" definition="0,255" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" keepDecimalSeparator="true" order="15" encodingElement="iso8859" name="Any15">
                <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="XmlLeaf" hash="454949811" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" keepDecimalSeparator="true" order="15" encodingElement="iso8859" name="Leaf15">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="XmlAttribute" hash="427841326" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" keepDecimalSeparator="true" order="16" encodingElement="iso8859" name="Attribute16">
+                     <cardinality maximum="1"/>
+                  </childElement>
+               </childElements>
             </childElement>
          </childElements>
       </childElement>
