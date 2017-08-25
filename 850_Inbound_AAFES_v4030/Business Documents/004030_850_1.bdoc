@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <businessDocument xmlns="http://www.axway.com/mappingServices/x12BusinessDocument" id="eb6eaf91-8335-4808-a286-1104c44cf5ab" enableNullableChecks="true" bdocLibraryColl="Standards_Library_CoreEDI V 1.2.0" bdocOriginalName="004030/850" encodingBD="iso8859">
-   <signature appVersion="3.1.2" lastUpdatedOn="25/08/2017 11:58:52 +0300"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="25/08/2017 14:29:27 +0300"/>
    <childElements>
       <childElement factoryType="EdiHeader" order="1" name="HEADER" hash="-798815038">
          <cardinality maximum="1"/>
@@ -8010,9 +8010,6 @@
                   </childElement>
                   <childElement factoryType="EdiSimpleElement" hash="-1650196596" typeId="11" definition="4,9" paddingCharElement=" " allowDistortion="true" label="Transaction Set Control Number" keepDecimalSeparator="true" order="2481" paddingPosElement="3" encodingElement="iso8859" name="e02_0329">
                      <cardinality minimum="1" maximum="1"/>
-                  </childElement>
-                  <childElement factoryType="EdiSimpleElement" hash="1663069815" typeId="11" definition="255" paddingCharElement=" " allowDistortion="true" keepDecimalSeparator="true" order="2482" paddingPosElement="1" encodingElement="iso8859" name="SimpleElement2482">
-                     <cardinality maximum="1"/>
                   </childElement>
                </childElements>
             </childElement>
