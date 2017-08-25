@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <businessDocument xmlns="http://www.axway.com/mappingServices/xmlBusinessDocument" id="88e789ee-5dd8-46ea-86f8-c716ffdf3d87" encodingBD="iso8859">
-   <signature appVersion="3.1.2" lastUpdatedOn="25/08/2017 14:42:08 +0300"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="25/08/2017 14:43:32 +0300"/>
    <childElements>
       <childElement factoryType="XmlProlog" order="1" name="Prolog" label="Prolog xml" hash="982847463">
          <cardinality minimum="1" maximum="1"/>
@@ -44,9 +44,6 @@
                <cardinality maximum="1"/>
             </childElement>
             <childElement factoryType="XmlLeaf" hash="-2042736653" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" keepDecimalSeparator="true" order="14" encodingElement="iso8859" name="Leaf14">
-               <cardinality maximum="1"/>
-            </childElement>
-            <childElement factoryType="XmlLeaf" hash="-1022903612" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" keepDecimalSeparator="true" order="15" encodingElement="iso8859" name="Leaf15">
                <cardinality maximum="1"/>
             </childElement>
          </childElements>
