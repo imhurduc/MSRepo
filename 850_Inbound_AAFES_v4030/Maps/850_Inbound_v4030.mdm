@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="9a7b645a-9368-4294-92a7-97cb791aa9aa">
+   <signature appVersion="3.0.1" lastUpdatedOn="20/07/2016 12:35:20 -0500"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/850_Inbound_AAFES_v4030.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/004030_850_1.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-1894768221" elementPath="/HDR_RD/N1_MAIN_BT_GRP/N4_MAIN_BT/N401_BT/">
+         <dmlExpression><![CDATA[this\N4[1]\e01_0019]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1314313858" elementPath="/HDR_RD/N3_MAIN_ST/N302_ST/">
+         <dmlExpression><![CDATA[this\N3[1]\e02_0166]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1592239801" elementPath="/HDR_RD/SMI_CODE/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1089512729" elementPath="/DT3_RD/SDQ13/">
+         <dmlExpression><![CDATA[this\e13_0067]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-658407604" elementPath="/DET_RED/PO103/">
+         <dmlExpression><![CDATA[this\PO1\e03_0355]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1872564137" elementPath="/HDR_RD/N1_MAIN_RT_GRP/N1_RT/N104_RT/">
+         <dmlExpression><![CDATA[this\N1\e04_0067]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1886972296" elementPath="/HDR_RD/PER_Main/PER01/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\PER[1]\e02_0093]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="100360975" elementPath="/HDR_RD/N1_MAIN_RT_GRP/N1_RT/N102_RT/">
+         <dmlExpression><![CDATA[this\N1\e02_0093]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1804555218" elementPath="/NTE_RD/NTE01/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="174876069" elementPath="/HDR_RD/BEG03/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\BEG\e03_0324]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="484707886" elementPath="/SUM_RD/CTT01/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\G32\CTT\e01_0354]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1433323803" elementPath="/HDR_RD/PER_Main/PER04/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-404329074" elementPath="/DET_RED/PO108/">
+         <dmlExpression><![CDATA[this\PO1\e08_0235]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1176072140" elementPath="/DT3_RD/SDQ07/">
+         <dmlExpression><![CDATA[this\e07_0067]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1796754629" elementPath="/HDR_RD/TD504_TRANS/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\TRANSACTION\TD5[1]\e04_0091, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1333768630" elementPath="/DT3_RD/SDQ12/">
+         <dmlExpression><![CDATA[this\e12_0380]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="938674733" elementPath="/NTE_RD/NTE02_MTX02/">
+         <dmlExpression><![CDATA[this\e02_1551]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-83418509" elementPath="/HDR_RD/N1_MAIN_BT_GRP/N4_MAIN_BT/N403_BT/">
+         <dmlExpression><![CDATA[this\N4[1]\e03_0116]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-103759530" elementPath="/HDR_RD/TD505_RTG/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\TRANSACTION\TD5[1]\e05_0387, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1749750397" elementPath="/DET_RED/DET_ID/">
+         <dmlExpression><![CDATA["DET"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2048809283" elementPath="/HDR_RD/DTM_CAN/DTM01_CAN/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1152260221" elementPath="/HDR_RD/N1_MAIN_ZT_GRP/N1_ZT/N101_ZT/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-912058511" elementPath="/HDR_RD/N1_MAIN_RT_GRP/N1_RT/N103_RT/">
+         <dmlExpression><![CDATA[this\N1\e03_0066]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1142529725" elementPath="/HDR_RD/BEG05/">
+         <dmlExpression><![CDATA[ formatString (  convertToD (  in:\TRANSACTION\BEG\e05_0373), "YYMMDD")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="635866212" elementPath="/DET_RED/PO109/">
+         <dmlExpression><![CDATA[this\PO1\e09_0234]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1998419419" elementPath="/DET_RED/PO106/">
+         <dmlExpression><![CDATA[this\PO1\e06_0235]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1755232134" elementPath="/HDR_RD/DTM_PRO/DTM05_PRO/">
+         <dmlExpression><![CDATA["  "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="555225491" elementPath="/DT3_RD/BEG03/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\BEG\e03_0324]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1991081210" elementPath="/HDR_RD/ITD06/">
+         <dmlExpression><![CDATA[ formatString (  convertToD (  in:\TRANSACTION\ITD[1]\e06_0446), "YYMMDD")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="885704192" elementPath="/HDR_RD/ITD04/">
+         <dmlExpression><![CDATA[ formatString (  convertToD (  in:\TRANSACTION\ITD[1]\e04_0370), "YYMMDD")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1382878080" elementPath="/DET_RED/PO113/">
+         <dmlExpression><![CDATA[this\PO1\e13_0234]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2093978336" elementPath="/HD1_RD/SAC05/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\G1[1]\SAC\e05_0610]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2027269234" elementPath="/HDR_RD/FOB01/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\FOB[1]\e01_0146]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="85277430" elementPath="/DET_RED/PO117/">
+         <dmlExpression><![CDATA[this\PO1\e17_0234]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2110252881" elementPath="/DT3_RD/SDQ03/">
+         <dmlExpression><![CDATA[this\e03_0067]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="598505572" elementPath="/HDR_RD/DTM_REQ/DTM02_REQ/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1919311224" elementPath="/HDR_RD/N1_MAIN_BT_GRP/N4_MAIN_BT/N402_BT/">
+         <dmlExpression><![CDATA[this\N4[1]\e02_0156]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-793356517" elementPath="/HD3_RD/HD3ID/">
+         <dmlExpression><![CDATA["HD3"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1304189090" elementPath="/DET_RED/PO105/">
+         <dmlExpression><![CDATA[this\PO1\e05_0639]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1478630049" elementPath="/HDR_RD/DTM_SB4/DTM01_SB4/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1393593349" elementPath="/HDR_RD/N1_MAIN_RT_GRP/">
+         <dmlExpression><![CDATA[for each in:\TRANSACTION\G6[ where item\N1\e01_0098= "RT" ]]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1966043400" elementPath="/DET_RED/SAC01/">
+         <dmlExpression><![CDATA[this\SAC\e01_0248]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1478760824" elementPath="/HDR_RD/N3_MAIN_ST/N301_ST/">
+         <dmlExpression><![CDATA[this\N3[1]\e01_0166]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-218386110" elementPath="/HDR_RD/DTM_DEL/">
+         <dmlExpression><![CDATA[for each in:\TRANSACTION\DTM[ where item\e01_0374= "002"  ]]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-687006855" elementPath="/HDR_RD/DTM_PRO/DTM02_PRO/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-852744869" elementPath="/HDR_RD/N103_VN/">
+         <dmlExpression><![CDATA[if  ( in:\TRANSACTION\G6\N1[1]\e01_0098 = "VN" ) then 
+{ 
+	in:\TRANSACTION\G6[1]\N1\e03_0066
+	
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1288455161" elementPath="/HDR_RD/N1_MAIN_BT_GRP/N3_MAIN_BT/N301_BT/">
+         <dmlExpression><![CDATA[this\N3[1]\e01_0166]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="597766175" elementPath="/DET_RD/PO4_Main/">
+         <dmlExpression><![CDATA[for each this\PO4]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="76441952" elementPath="/HDR_RD/N4_MAIN_ST/N403_ST/">
+         <dmlExpression><![CDATA[this\N4[1]\e03_0116]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="552411275" elementPath="/HDR_RD/N1_MAIN_BT_GRP/N1_BT/N201_BT/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="275618771" elementPath="/DET_RED/PO102/">
+         <dmlExpression><![CDATA[floor ( this\PO1\e02_0330)]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-595809580" elementPath="/SUM_RD/BEG03/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\BEG\e03_0324]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1763134325" elementPath="/DET_RD/Leaf213/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1550973066" elementPath="/DET_RD/PO3_Main/PO304/">
+         <dmlExpression><![CDATA["                 "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1693908857" elementPath="/HDR_RD/PER05/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2085299872" elementPath="/DET_RED/PO119/">
+         <dmlExpression><![CDATA[this\PO1\e19_0234]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="490816502" elementPath="/HDR_RD/CHS01/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\CSH[1]\e01_0563]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="886494682" elementPath="/NTE_RD/">
+         <dmlExpression><![CDATA[for each in :\TRANSACTION\G5\MTX]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1277366833" elementPath="/HDR_RD/N1_MAIN_BT_GRP/N1_BT/N104_BT/">
+         <dmlExpression><![CDATA[this\N1\e04_0067]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-125065024" elementPath="/HDR_RD/NI_MAIN_ST_GRP/N3_MAIN_ST/N303_ST/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-743329265" elementPath="/HDR_RD/ITD05/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\ITD[1]\e05_0351]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-196881743" elementPath="/HDR_RD/DTM_SB4/DTM02_SB4/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-184985326" elementPath="/HDR_RD/DTM05_SB4/">
+         <dmlExpression><![CDATA["  "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1033339008" elementPath="/HDR_RD/N104_VN/">
+         <dmlExpression><![CDATA[if  ( in:\TRANSACTION\G6\N1[1]\e01_0098 = "VN" ) then 
+{ 
+	in:\TRANSACTION\G6[1]\N1\e04_0067
+	
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1125520443" elementPath="/DT2_RD/DT2_ID/">
+         <dmlExpression><![CDATA["DT2"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-799543852" elementPath="/HDR_RD/N1_MAIN_RT_GRP/N1_RT/N101_RT/">
+         <dmlExpression><![CDATA[this\N1\e01_0098]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1762384092" elementPath="/DT3_RD/SDQ15/">
+         <dmlExpression><![CDATA[this\e15_0067]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-593344285" elementPath="/DT3_RD/SDQ11/">
+         <dmlExpression><![CDATA[this\e11_0067]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-436071785" elementPath="/NTE_RD/NTE_ID/">
+         <dmlExpression><![CDATA["NTE"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-343278837" elementPath="/HDR_RD/REF01/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\REF[1]\e01_0128]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-113516889" elementPath="/DT3_RD/SDQ21/">
+         <dmlExpression><![CDATA[this\e21_0067]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2048033320" elementPath="/DET_RD/PO3_Main/PO301/">
+         <dmlExpression><![CDATA["  "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-58332187" elementPath="/DET_RD/DT2_RD/PID01/">
+         <dmlExpression><![CDATA[this\PID\e01_0349]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1585620713" elementPath="/HDR_RD/N1_MAIN_BT_GRP/">
+         <dmlExpression><![CDATA[for each in:\TRANSACTION\G6[where item\N1\e01_0098= "BT"]]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="328876586" elementPath="/HDR_RD/ORDTYP/">
+         <dmlExpression><![CDATA["1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="439415431" elementPath="/HDR_RD/N4_MAIN_ST/N404_ST/">
+         <dmlExpression><![CDATA[this\N4[1]\e04_0026]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2042759740" elementPath="/DET_RED/PO112/">
+         <dmlExpression><![CDATA[this\PO1\e12_0235]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1198099367" elementPath="/HDR_RD/FOB03/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\FOB[1]\e03_0352]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="257161817" elementPath="/HD3_RD/PKG05/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\PKG[1]\e05_0352]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1256434044" elementPath="/HDR_RD/ST_02/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\ST\e02_0329]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1437229883" elementPath="/HDR_RD/N1_MAIN_ST/N104_ST/">
+         <dmlExpression><![CDATA[this\N1\e04_0067]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1590046227" elementPath="/HDR_RD/N1_MAIN_BT_GRP/N1_BT/N103_BT/">
+         <dmlExpression><![CDATA[this\N1\e03_0066]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1274884702" elementPath="/HDR_RD/N102_VN/">
+         <dmlExpression><![CDATA[if  ( in:\TRANSACTION\G6\N1[1]\e01_0098 = "VN" ) then 
+{ 
+	in:\TRANSACTION\G6[1]\N1\e02_0093
+	
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1091932045" elementPath="/HD3_RD/PKG01/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\PKG[1]\e01_0349]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-30710338" elementPath="/HDR_RD/PER_Main/PER03/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="142471410" elementPath="/DT2_RD/BEG03/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\BEG\e03_0324]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1423514055" elementPath="/HDR_RD/DTM_SHP/">
+         <dmlExpression><![CDATA[for each in:\TRANSACTION\DTM[ where item\e01_0374= "010" ]]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1327914668" elementPath="/HDR_RD/N1_MAIN_RT_GRP/N1_RT/N403_RT/">
+         <dmlExpression><![CDATA[this\N4[1]\e03_0116]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-941993994" elementPath="/SUM_RD/SUM_ID/">
+         <dmlExpression><![CDATA["SUM"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1640775796" elementPath="/DT2_RD/UPC/">
+         <dmlExpression><![CDATA[this\..\PO1\e07_0234]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="455474758" elementPath="/DET_RED/PO302/">
+         <dmlExpression><![CDATA["      "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1401726652" elementPath="/HDR_RD/N1_MAIN_ST/N103_ST/">
+         <dmlExpression><![CDATA[this\N1\e03_0066]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="877884266" elementPath="/DET_RED/PO104/">
+         <dmlExpression><![CDATA[this\PO1\e04_0212]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-532910434" elementPath="/HDR_RD/PER_Main/PER06/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-210710030" elementPath="/HDR_RD/DTM_SHP/DTM02_SHP/">
+         <dmlExpression><![CDATA[formatString ( convertToD (   this\e02_0373 ), "YYMMDD")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1161903820" elementPath="/DT3_RD/SDQ08/">
+         <dmlExpression><![CDATA[this\e08_0380]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1165633955" elementPath="/DET_RD/DT2_RD/PID05_DESCRIPTION/">
+         <dmlExpression><![CDATA[this\PID\e05_0352]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1190013601" elementPath="/DET_RD/">
+         <dmlExpression><![CDATA[for each in:\TRANSACTION\G12]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-51678176" elementPath="/HDR_RD/DTM_REQ/DTM05_REQ/">
+         <dmlExpression><![CDATA["  "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1064939533" elementPath="/HD3_RD/">
+         <dmlExpression><![CDATA[%occurs :=0;
+if defined in :\TRANSACTION\PKG[ 1 ]\e01_0349 then
+             %occurs := 1;
+%occurs times
+]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="634354390" elementPath="/HDR_RD/TD104_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\TRANSACTION\TD1[1]\e04_0022, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="434810426" elementPath="/HDR_RD/N1_MAIN_RT_GRP/N1_RT/N401_RT/">
+         <dmlExpression><![CDATA[this\N4[1]\e01_0019]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="54858250" elementPath="/HDR_RD/NI_MAIN_ST_GRP/">
+         <dmlExpression><![CDATA[for each in:\TRANSACTION\G6 [where item\N1\e01_0098= "ST" ]]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-900946970" elementPath="/DET_RD/DT2_RD/">
+         <dmlExpression><![CDATA[for each this\G14]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1200688934" elementPath="/DT3_RD/SDQ05/">
+         <dmlExpression><![CDATA[this\e05_0067]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1319158334" elementPath="/HDR_RD/DTM_SHP/DTM01_SHP/">
+         <dmlExpression><![CDATA[this\e01_0374]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="237422507" elementPath="/DT3_RD/SDQ04/">
+         <dmlExpression><![CDATA[this\e04_0380]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1098342583" elementPath="/HD1_RD/SAC02/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\G1[1]\SAC\e02_1300]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1361893207" elementPath="/DET_RD/PO3_Main/PO303/">
+         <dmlExpression><![CDATA["   "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1684134087" elementPath="/DT3_RD/SDQ09/">
+         <dmlExpression><![CDATA[this\e09_0067]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1917930371" elementPath="/HDR_RD/BEG02/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\BEG\e02_0092]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1002520492" elementPath="/HDR_RD/N1_MAIN_BT_GRP/N1_BT/N102_BT/">
+         <dmlExpression><![CDATA[this\N1\e02_0093]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1753510493" elementPath="/DT3_RD/SDQ17/">
+         <dmlExpression><![CDATA[this\e17_0067]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1032875074" elementPath="/DT3_RD/SDQ14/">
+         <dmlExpression><![CDATA[this\e14_0380]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="554413281" elementPath="/HDR_RD/DTM_DEL/DTM05_DEL/">
+         <dmlExpression><![CDATA["  "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1042339500" elementPath="/HDR_RD/N1_MAIN_ST/N101_ST/">
+         <dmlExpression><![CDATA[this\N1\e01_0098]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-766259718" elementPath="/HDR_RD/PER_Main/PER02/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\PER[1]\e04_0364]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-637727373" elementPath="/HDR_RD/N1_MAIN_ZT_GRP/N1_ZT/N104_ZT/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="631099656" elementPath="/HDR_RD/N1_MAIN_RT_GRP/N1_RT/N302_RT/">
+         <dmlExpression><![CDATA[this\N3[ 1]\e02_0166]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1175944258" elementPath="/HDR_RD/FOB02/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\FOB[1]\e02_0309]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2024234980" elementPath="/HD2_RD/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\TRANSACTION\G1\SAC\e01_0248 then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="674866735" elementPath="/DT3_RD/UPC/">
+         <dmlExpression><![CDATA[this\..\PO1\e07_0234]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1689171720" elementPath="/DET_RD/PO3_Main/PO307/">
+         <dmlExpression><![CDATA["  "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1028125192" elementPath="/HDR_RD/N4_MAIN_ST/N401_ST/">
+         <dmlExpression><![CDATA[this\N4[1]\e01_0019]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="969715238" elementPath="/HDR_RD/ITD07/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\ITD[1]\e07_0386]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1069033053" elementPath="/HDR_RD/BEG01/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\BEG\e01_0353]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1780126283" elementPath="/DET_RED/PO118/">
+         <dmlExpression><![CDATA[this\PO1\e18_0235]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-311716523" elementPath="/HDR_RD/N1_MAIN_RT_GRP/N1_RT/N301_RT/">
+         <dmlExpression><![CDATA[this\N3[ 1]\e01_0166]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-481078764" elementPath="/NTE_RD/BEG03/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\BEG\e03_0324]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="698768855" elementPath="/HDR_RD/DTM_PRO/DTM01_PRO/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="916367939" elementPath="/DET_RED/PO116/">
+         <dmlExpression><![CDATA[this\PO1\e16_0235]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-96479523" elementPath="/HDR_RD/ITD01/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\ITD[1]\e01_0336]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1278869045" elementPath="/DT3_RD/DT3_RD/">
+         <dmlExpression><![CDATA["DT3"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1289738164" elementPath="/HDR_RD/DTM_CAN/DTM05_CAN/">
+         <dmlExpression><![CDATA["  "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1907618929" elementPath="/HDR_RD/DTM_SHP/DTM05_SHP/">
+         <dmlExpression><![CDATA["  "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1378767359" elementPath="/HDR_RD/N4_MAIN_ST/N402_ST/">
+         <dmlExpression><![CDATA[this\N4[1]\e02_0156]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2057696227" elementPath="/DET_RD/PO3_Main/PO306/">
+         <dmlExpression><![CDATA["               "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2057934625" elementPath="/HDR_RD/N1_MAIN_RT_GRP/N1_RT/N402_RT/">
+         <dmlExpression><![CDATA[this\N4[1]\e02_0156]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1232825067" elementPath="/DET_RD/DT3_RD/">
+         <dmlExpression><![CDATA[for each this\SDQ]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-322972545" elementPath="/DET_RD/Parent205/">
+         <dmlExpression><![CDATA[for each this\G15]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1666144900" elementPath="/DET_RD/PO4_Main/PO401/">
+         <dmlExpression><![CDATA[this\e01_0356]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="415268572" elementPath="/HD3_RD/PKG02/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\PKG[1]\e02_0753]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1888691056" elementPath="/DT3_RD/SDQ18/">
+         <dmlExpression><![CDATA[this\e18_0380]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-100659748" elementPath="/HDR_RD/DTM_CAN/DTM02_CAN/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1505401088" elementPath="/DET_RED/PO107/">
+         <dmlExpression><![CDATA[this\PO1\e07_0234]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-357233578" elementPath="/HDR_RD/N1_MAIN_ZT_GRP/N1_ZT/N103_ZT/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1879070051" elementPath="/DT3_RD/SDQ19/">
+         <dmlExpression><![CDATA[this\e19_0067]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-346614518" elementPath="/HDR_RD/BEG06/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\BEG\e06_0367]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-631315155" elementPath="/DT3_RD/SDQ22/">
+         <dmlExpression><![CDATA[this\e22_0380]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="329017677" elementPath="/HDR_RD/ITD03/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\ITD[1]\e03_0338]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1393188884" elementPath="/HD1_RD/HD1_ID/">
+         <dmlExpression><![CDATA["HD2"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="425423548" elementPath="/HDR_RD/N101_VN/">
+         <dmlExpression><![CDATA[if  ( in:\TRANSACTION\G6\N1[1]\e01_0098 = "VN" ) then 
+{ 
+	in:\TRANSACTION\G6[1]\N1\e01_0098
+	
+}]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1030459595" elementPath="/HDR_RD/HDR_ID/">
+         <dmlExpression><![CDATA["HDR"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-471421303" elementPath="/DT3_RD/SDQ20/">
+         <dmlExpression><![CDATA[this\e20_0380]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1401439590" elementPath="/HDR_RD/ITD12/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\ITD[1]\e12_0352]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2091008041" elementPath="/HDR_RD/TD103_QUAL/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\TRANSACTION\TD1[1]\e03_0023, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1361104425" elementPath="/HDR_RD/N1_MAIN_ZT_GRP/">
+         <dmlExpression><![CDATA[for each in:\TRANSACTION\G6[ where item\N1\e01_0098= "ZT" ]]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-285664770" elementPath="/DET_RED/PO115/">
+         <dmlExpression><![CDATA[this\PO1\e15_0234]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1230904502" elementPath="/DET_RED/SAC02/">
+         <dmlExpression><![CDATA[this\SAC\e02_1300]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-500602760" elementPath="/DET_RED/PO111/">
+         <dmlExpression><![CDATA[this\PO1\e11_0234]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1220962516" elementPath="/DET_RED/PO114/">
+         <dmlExpression><![CDATA[this\PO1\e14_0235]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1103999295" elementPath="/HDR_RD/DTM_DEL/DTM01_DEL/">
+         <dmlExpression><![CDATA[this\e01_0374]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="812358149" elementPath="/HDR_RD/DTM02_DEL/">
+         <dmlExpression><![CDATA[ formatString (  convertToD (  this\e02_0373), "YYMMDD")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="201041286" elementPath="/DT3_RD/SDQ16/">
+         <dmlExpression><![CDATA[this\e16_0380]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-228100286" elementPath="/HD1_RD/SAC01/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\G1[1]\SAC\e01_0248]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-256741993" elementPath="/DT3_RD/SDQ06/">
+         <dmlExpression><![CDATA[this\e06_0380]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1942011131" elementPath="/DET_RED/SAC05/">
+         <dmlExpression><![CDATA[this\SAC\e05_0610]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-278091275" elementPath="/DET_RD/PO1_Main/PO101/">
+         <dmlExpression><![CDATA[this\PO1\e01_0350]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="944481155" elementPath="/DET_RED/BEG03/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\BEG\e03_0324]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1333167175" elementPath="/HDR_RD/N1_MAIN_ST/N102_ST/">
+         <dmlExpression><![CDATA[this\N1\e02_0093]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1803249210" elementPath="/DET_RED/SAC15/">
+         <dmlExpression><![CDATA[this\SAC\e15_0352]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="665389400" elementPath="/DT3_RD/C00101/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="479369961" elementPath="/HDR_RD/N1_MAIN_ST/N201_ST/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1698482643" elementPath="/HDR_RD/N1_ST/N304_ST/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1515828038" elementPath="/HDR_RD/DTM_REQ/DTM01_REQ/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1575166917" elementPath="/HD1_RD/BEG03/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\BEG\e03_0324]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="885598394" elementPath="/HDR_RD/REF02/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\REF[1]\e02_0127]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1311248604" elementPath="/DT3_RD/SDQ10/">
+         <dmlExpression><![CDATA[this\e10_0380]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-236625298" elementPath="/DT3_RD/SDQ02/">
+         <dmlExpression><![CDATA[this\e02_0066]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-470601454" elementPath="/HD3_RD/BEG03/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\BEG\e03_0324]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1309095456" elementPath="/HDR_RD/N1_MAIN_ZT_GRP/N1_ZT/N102_ZT/">
+         <dmlExpression><![CDATA[" "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="689711681" elementPath="/DET_RED/PO110/">
+         <dmlExpression><![CDATA[this\PO1\e10_0235]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-383665263" elementPath="/HDR_RD/N101_BT/">
+         <dmlExpression><![CDATA[this\N1\e01_0098]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1314234649" elementPath="/DET_RED/SAC12/">
+         <dmlExpression><![CDATA[this\SAC\e12_0331]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>
