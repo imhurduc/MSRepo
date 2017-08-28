@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="50a46a8f-4540-4c71-8268-193474f6c6c8">
+   <signature appVersion="3.1.2" lastUpdatedOn="28/08/2017 09:56:55 +0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/bdoc1.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/bdoc1.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-768856778" elementPath="/MSH/SubComponentSeparator/">
+         <dmlExpression><![CDATA[in:\MSH\SubComponentSeparator]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2006921631" elementPath="/MSH/SendingNetworkAddress/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MSH\SendingNetworkAddress then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-939431127" elementPath="/MSH/ReceivingFacility/NameSpaceID/">
+         <dmlExpression><![CDATA[in:\MSH\ReceivingFacility\NameSpaceID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="145974957" elementPath="/MSH/VersionID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\VersionID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1542543673" elementPath="/MSH/ReceivingResponsibleOrganization/AssigningAuthority/NamespaceID/">
+         <dmlExpression><![CDATA[in:\MSH\ReceivingResponsibleOrganization\AssigningAuthority\NamespaceID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-832520486" elementPath="/MSH/SequenceNumber/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SequenceNumber, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1267578768" elementPath="/MSH/ReceivingApplication/UniversalID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingApplication\UniversalID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="214623448" elementPath="/MSH/FieldSeparator/">
+         <dmlExpression><![CDATA[in:\MSH\FieldSeparator]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1345298610" elementPath="/MSH/ReceivingResponsibleOrganization/OrganizationNameTypeCode/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingResponsibleOrganization\OrganizationNameTypeCode, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="919803347" elementPath="/MSH/ReceivingNetworkAddress/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MSH\ReceivingNetworkAddress then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1743277364" elementPath="/MSH/CharacterSet/">
+         <dmlExpression><![CDATA[for each in:\MSH\CharacterSet do this]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1230166925" elementPath="/MSH/ReceivingResponsibleOrganization/IDNumber/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingResponsibleOrganization\IDNumber, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1587036913" elementPath="/MSH/EscapeCharacter/">
+         <dmlExpression><![CDATA[in:\MSH\EscapeCharacter]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-135126957" elementPath="/MSH/PrincipalLanguageOfMessage/AlternateCodingSystemVersionID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\PrincipalLanguageOfMessage\AlternateCodingSystemVersionID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-492413389" elementPath="/MSH/SendingApplication/UniversalIDType/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingApplication\UniversalIDType, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="992222816" elementPath="/MSH/ProcessingID/ProcessingMode/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ProcessingID\ProcessingMode, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1320537168" elementPath="/MSH/SendingResponsibleOrganization/NameRepresentationCode/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingResponsibleOrganization\NameRepresentationCode, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-319289290" elementPath="/MSH/SendingResponsibleOrganization/IdentifierCheckDigit/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingResponsibleOrganization\IdentifierCheckDigit, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1285755562" elementPath="/MSH/SendingApplication/UniversalID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingApplication\UniversalID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1630343066" elementPath="/MSH/SendingFacility/UniversalID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingFacility\UniversalID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="826827454" elementPath="/MSH/SendingApplication/NameSpaceID/">
+         <dmlExpression><![CDATA[in:\MSH\SendingApplication\NameSpaceID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="168279675" elementPath="/MSH/ID/">
+         <dmlExpression><![CDATA[in:\MSH\ID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="428104451" elementPath="/MSH/ReceivingResponsibleOrganization/IdentifierTypeCode/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingResponsibleOrganization\IdentifierTypeCode, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="462733111" elementPath="/MSH/MessageType/MessageCodeID/">
+         <dmlExpression><![CDATA[in:\MSH\MessageType\MessageCodeID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="708119021" elementPath="/MSH/SendingResponsibleOrganization/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MSH\SendingResponsibleOrganization then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="290818045" elementPath="/MSH/SendingFacility/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MSH\SendingFacility then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1669222257" elementPath="/MSH/SendingResponsibleOrganization/AssigningAuthority/UniversalIDType/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingResponsibleOrganization\AssigningAuthority\UniversalIDType, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-903757262" elementPath="/MSH/AlternateCharacterSetHandlingScheme/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\AlternateCharacterSetHandlingScheme, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="66886519" elementPath="/MSH/ComponentSeparator/">
+         <dmlExpression><![CDATA[in:\MSH\ComponentSeparator]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1205878702" elementPath="/MSH/SendingApplication/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MSH\SendingApplication then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-681974237" elementPath="/MSH/SendingFacility/UniversalIDType/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingFacility\UniversalIDType, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="798879910" elementPath="/MSH/ReceivingApplication/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MSH\ReceivingApplication then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="410020563" elementPath="/MSH/ProcessingID/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MSH\ProcessingID then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="253432169" elementPath="/MSH/MessageProfileIdentifier/">
+         <dmlExpression><![CDATA[for each in:\MSH\MessageProfileIdentifier]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2134330189" elementPath="/MSH/ReceivingFacility/UniversalID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingFacility\UniversalID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-158785659" elementPath="/MSH/PrincipalLanguageOfMessage/Identifier/">
+         <dmlExpression><![CDATA[in:\MSH\PrincipalLanguageOfMessage\Identifier]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-554926208" elementPath="/MSH/SendingResponsibleOrganization/OrganizationName/">
+         <dmlExpression><![CDATA[in:\MSH\SendingResponsibleOrganization\OrganizationName]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-200359336" elementPath="/MSH/ReceivingResponsibleOrganization/AssigningFacility/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MSH\ReceivingResponsibleOrganization\AssigningFacility then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-557499624" elementPath="/MSH/Security/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\Security, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="538409572" elementPath="/MSH/SendingResponsibleOrganization/OrganizationIdentifier/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingResponsibleOrganization\OrganizationIdentifier, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2136219148" elementPath="/MSH/ContinuationPointer/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ContinuationPointer, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="523123830" elementPath="/MSH/DateTimeOfMessage/Date/">
+         <dmlExpression><![CDATA[in:\MSH\DateTimeOfMessage\Date]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1654909852" elementPath="/MSH/ProcessingID/ProcessingID/">
+         <dmlExpression><![CDATA[in:\MSH\ProcessingID\ProcessingID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1371976292" elementPath="/MSH/ApplicationAcknowledgementType/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ApplicationAcknowledgementType, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="784639555" elementPath="/MSH/ReceivingNetworkAddress/UniversalID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingNetworkAddress\UniversalID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-904983021" elementPath="/MSH/SendingNetworkAddress/NameSpaceID/">
+         <dmlExpression><![CDATA[in:\MSH\SendingNetworkAddress\NameSpaceID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1981246782" elementPath="/MSH/SendingResponsibleOrganization/AssigningFacility/UniversalIDType/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingResponsibleOrganization\AssigningFacility\UniversalIDType, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1126685983" elementPath="/MSH/ReceivingResponsibleOrganization/OrganizationIdentifier/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingResponsibleOrganization\OrganizationIdentifier, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1728223238" elementPath="/MSH/PrincipalLanguageOfMessage/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MSH\PrincipalLanguageOfMessage then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1329187511" elementPath="/MSH/MessageType/MessageStructureID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\MessageType\MessageStructureID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1092685186" elementPath="/MSH/SendingResponsibleOrganization/CheckDigitScheme/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingResponsibleOrganization\CheckDigitScheme, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="478480151" elementPath="/MSH/MessageProfileIdentifier/UniversalIDType/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\UniversalIDType, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="126980017" elementPath="/MSH/SendingResponsibleOrganization/IdentifierTypeCode/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingResponsibleOrganization\IdentifierTypeCode, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-134986359" elementPath="/MSH/SendingResponsibleOrganization/AssigningAuthority/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MSH\SendingResponsibleOrganization\AssigningAuthority then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1473923678" elementPath="/MSH/AcceptAcknowledgementType/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\AcceptAcknowledgementType, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="564661114" elementPath="/MSH/SendingResponsibleOrganization/AssigningFacility/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MSH\SendingResponsibleOrganization\AssigningFacility then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-749636345" elementPath="/MSH/PrincipalLanguageOfMessage/AlternateText/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\PrincipalLanguageOfMessage\AlternateText, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2131964376" elementPath="/MSH/SendingResponsibleOrganization/AssigningFacility/NamespaceID/">
+         <dmlExpression><![CDATA[in:\MSH\SendingResponsibleOrganization\AssigningFacility\NamespaceID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1600862592" elementPath="/MSH/ReceivingResponsibleOrganization/OrganizationName/">
+         <dmlExpression><![CDATA[in:\MSH\ReceivingResponsibleOrganization\OrganizationName]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2079895245" elementPath="/MSH/SendingFacility/NameSpaceID/">
+         <dmlExpression><![CDATA[in:\MSH\SendingFacility\NameSpaceID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1858976697" elementPath="/MSH/ReceivingApplication/UniversalIDType/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingApplication\UniversalIDType, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1069950228" elementPath="/MSH/MessageControlID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\MessageControlID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2119202453" elementPath="/MSH/ReceivingResponsibleOrganization/CheckDigitScheme/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingResponsibleOrganization\CheckDigitScheme, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-710873228" elementPath="/MSH/MessageProfileIdentifier/UniversalID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\UniversalID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="800556784" elementPath="/MSH/ReceivingNetworkAddress/NameSpaceID/">
+         <dmlExpression><![CDATA[in:\MSH\ReceivingNetworkAddress\NameSpaceID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1312699877" elementPath="/MSH/DateTimeOfMessage/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MSH\DateTimeOfMessage then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="229318885" elementPath="/MSH/ReceivingResponsibleOrganization/AssigningAuthority/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MSH\ReceivingResponsibleOrganization\AssigningAuthority then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-617280389" elementPath="/MSH/ReceivingFacility/UniversalIDType/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingFacility\UniversalIDType, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1403190429" elementPath="/MSH/SendingResponsibleOrganization/AssigningAuthority/UniversalID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingResponsibleOrganization\AssigningAuthority\UniversalID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1780759852" elementPath="/MSH/MessageType/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MSH\MessageType then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-974618672" elementPath="/MSH/ReceivingFacility/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MSH\ReceivingFacility then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1756400590" elementPath="/MSH/RepetitionSeparator/">
+         <dmlExpression><![CDATA[in:\MSH\RepetitionSeparator]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1362003335" elementPath="/MSH/ReceivingResponsibleOrganization/AssigningFacility/UniversalIDType/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingResponsibleOrganization\AssigningFacility\UniversalIDType, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-401376585" elementPath="/MSH/PrincipalLanguageOfMessage/Text/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\PrincipalLanguageOfMessage\Text, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="611038388" elementPath="/MSH/ReceivingResponsibleOrganization/AssigningAuthority/UniversalID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingResponsibleOrganization\AssigningAuthority\UniversalID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1137794195" elementPath="/MSH/PrincipalLanguageOfMessage/CodingSystemVersionID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\PrincipalLanguageOfMessage\CodingSystemVersionID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-623403974" elementPath="/MSH/ReceivingResponsibleOrganization/IdentifierCheckDigit/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingResponsibleOrganization\IdentifierCheckDigit, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2120911883" elementPath="/MSH/PrincipalLanguageOfMessage/NameofAlternateCodingSystem/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\PrincipalLanguageOfMessage\NameofAlternateCodingSystem, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2084875118" elementPath="/MSH/SendingResponsibleOrganization/OrganizationNameTypeCode/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingResponsibleOrganization\OrganizationNameTypeCode, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1271849905" elementPath="/MSH/PrincipalLanguageOfMessage/NameofCodingSystem/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\PrincipalLanguageOfMessage\NameofCodingSystem, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1320113631" elementPath="/MSH/SendingResponsibleOrganization/IDNumber/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingResponsibleOrganization\IDNumber, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1518049816" elementPath="/MSH/PrincipalLanguageOfMessage/AlternateIdentifier/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\PrincipalLanguageOfMessage\AlternateIdentifier, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-229667244" elementPath="/MSH/PrincipalLanguageOfMessage/OriginalText/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\PrincipalLanguageOfMessage\OriginalText, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1464912782" elementPath="/MSH/SendingNetworkAddress/UniversalIDType/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingNetworkAddress\UniversalIDType, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2056381805" elementPath="/MSH/ReceivingNetworkAddress/UniversalIDType/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingNetworkAddress\UniversalIDType, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="514848227" elementPath="/MSH/MessageProfileIdentifier/NamespaceID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\NamespaceID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1583226462" elementPath="/MSH/ReceivingResponsibleOrganization/NameRepresentationCode/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingResponsibleOrganization\NameRepresentationCode, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-308173670" elementPath="/MSH/ReceivingResponsibleOrganization/AssigningAuthority/UniversalIDType/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingResponsibleOrganization\AssigningAuthority\UniversalIDType, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1104990348" elementPath="/MSH/SendingResponsibleOrganization/AssigningAuthority/NamespaceID/">
+         <dmlExpression><![CDATA[in:\MSH\SendingResponsibleOrganization\AssigningAuthority\NamespaceID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="33990690" elementPath="/MSH/ReceivingApplication/NameSpaceID/">
+         <dmlExpression><![CDATA[in:\MSH\ReceivingApplication\NameSpaceID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="839269391" elementPath="/MSH/SendingNetworkAddress/UniversalID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingNetworkAddress\UniversalID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1337089933" elementPath="/MSH/ReceivingResponsibleOrganization/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MSH\ReceivingResponsibleOrganization then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="512140976" elementPath="/MSH/ReceivingResponsibleOrganization/AssigningFacility/UniversalID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\ReceivingResponsibleOrganization\AssigningFacility\UniversalID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1027050601" elementPath="/MSH/MessageType/TriggerEventID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\MessageType\TriggerEventID, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1621128643" elementPath="/MSH/ReceivingResponsibleOrganization/AssigningFacility/NamespaceID/">
+         <dmlExpression><![CDATA[in:\MSH\ReceivingResponsibleOrganization\AssigningFacility\NamespaceID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1705524715" elementPath="/MSH/MessageProfileIdentifier/EntityIdentifier/">
+         <dmlExpression><![CDATA[this\EntityIdentifier]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="816389842" elementPath="/MSH/CountryCode/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\CountryCode, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-992930860" elementPath="/MSH/SendingResponsibleOrganization/AssigningFacility/UniversalID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MSH\SendingResponsibleOrganization\AssigningFacility\UniversalID, absent )]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

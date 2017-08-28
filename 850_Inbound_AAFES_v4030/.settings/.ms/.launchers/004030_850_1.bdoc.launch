@@ -12,22 +12,22 @@
 <mapEntry key="0#ACCEPT_INPUT_DOCUMENTS_WITH_ERRORS#" value="0"/>
 <mapEntry key="1#ACCEPT_OUTPUT_DOCUMENTS_WITH_ERRORS#" value="0"/>
 </mapAttribute>
-<stringAttribute key="com.axway.ms.dml.simulation.ui.bdocInputFilePath" value="/850_Inbound_AAFES_v4030/Testdata/2_1.tst"/>
+<stringAttribute key="com.axway.ms.dml.simulation.ui.bdocInputFilePath" value="/prj1/Testdata/2_1.tst"/>
 <mapAttribute key="com.axway.ms.dml.simulation.ui.bdocOutputFilePath">
-<mapEntry key="out" value="/850_Inbound_AAFES_v4030/Testdata/out"/>
+<mapEntry key="out" value="/prj1/Testdata/out"/>
 </mapAttribute>
 <mapAttribute key="com.axway.ms.dml.simulation.ui.channels"/>
 <mapAttribute key="com.axway.ms.dml.simulation.ui.communications"/>
 <stringAttribute key="com.axway.ms.dml.simulation.ui.errorMapWorkspacePath" value=""/>
 <booleanAttribute key="com.axway.ms.dml.simulation.ui.handleErrorMap" value="false"/>
-<stringAttribute key="com.axway.ms.dml.simulation.ui.objectWorkspacePath" value="/850_Inbound_AAFES_v4030/Maps/850_Inbound_v4030.mdm"/>
+<stringAttribute key="com.axway.ms.dml.simulation.ui.objectWorkspacePath" value="/prj1/Maps/850_Inbound_v4030.mdm"/>
 <stringAttribute key="com.axway.ms.dml.simulation.ui.simulationTimeout" value="240000"/>
 <booleanAttribute key="com.axway.ms.dml.simulation.ui.useDefaultErrorMapWorkspacePath" value="true"/>
 <booleanAttribute key="continueMessageProcessingOnError" value="true"/>
 <booleanAttribute key="groupAllResultingInstances" value="true"/>
 <booleanAttribute key="keepExactValue" value="false"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/850_Inbound_AAFES_v4030/Maps/850_Inbound_v4030.mdm"/>
+<listEntry value="/prj1/Maps/850_Inbound_v4030.mdm"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
