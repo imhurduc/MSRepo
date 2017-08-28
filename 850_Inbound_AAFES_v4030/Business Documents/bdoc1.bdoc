@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <businessDocument xmlns="http://www.axway.com/mappingServices/hl7BusinessDocument" id="d5d1675c-35ec-4735-a92c-8819ccd027aa" encodingBD="iso8859">
-   <signature appVersion="3.1.2" lastUpdatedOn="28/08/2017 11:44:15 +0300"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="28/08/2017 11:44:50 +0300"/>
    <childElements>
       <childElement factoryType="Hl7Field" order="1" name="MSH" hash="-432499628">
          <cardinality minimum="1" maximum="1"/>
@@ -14,7 +14,7 @@
             <childElement factoryType="Hl7Leaf" hash="66886519" typeId="10" definition="1" paddingCharElement=" " allowDistortion="true" label="Component Separator" nullable="true" keepDecimalSeparator="true" defaultValue="^" order="4" encodingElement="iso8859" name="ComponentSeparator">
                <cardinality minimum="1" maximum="1"/>
             </childElement>
-            <childElement factoryType="Hl7Leaf" hash="-1756400590" typeId="10" definition="1" paddingCharElement=" " allowDistortion="true" label="Repetitwtion Separator" nullable="true" keepDecimalSeparator="true" defaultValue="sd" order="5" encodingElement="iso8859" name="RepetitionSeparator">
+            <childElement factoryType="Hl7Leaf" hash="-1756400590" typeId="10" definition="1" paddingCharElement=" " allowDistortion="true" label="Repetitwtion Separator" nullable="true" keepDecimalSeparator="true" defaultValue="s" order="5" encodingElement="iso8859" name="RepetitionSeparator">
                <cardinality minimum="1" maximum="1"/>
             </childElement>
             <childElement factoryType="Hl7Leaf" hash="-1587036913" typeId="10" definition="1" paddingCharElement=" " allowDistortion="true" label="Escape Character" nullable="true" keepDecimalSeparator="true" defaultValue="\" order="6" encodingElement="iso8859" name="EscapeCharacter">
